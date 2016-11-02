@@ -9,7 +9,8 @@ export default {
   moduleName: 'inferno-starter',
   plugins: [
     buble({
-      jsx: 'createElement'
+      jsx: 'createElement',
+      objectAssign: 'Object.assign'
     }),
     uglify(),
     nodeResolve({
