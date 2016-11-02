@@ -1,0 +1,39 @@
+{
+  "name": "inferno-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "watch": {
+    "build": "src/**"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "npm run build && node scripts/start.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm run start & npm-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanderzon/inferno-rollup-buble-starter.git"
+  },
+  "author": "Fredrik Andersson <f.anderzon@gmail.com> (http://fredrik.anderzon.se)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fanderzon/inferno-rollup-buble-starter/issues"
+  },
+  "homepage": "https://github.com/fanderzon/inferno-rollup-buble-starter#readme",
+  "dependencies": {
+    "inferno": "0.7.27",
+    "inferno-create-element": "0.7.27",
+    "inferno-dom": "0.7.27"
+  },
+  "devDependencies": {
+    "buble": "0.14.2",
+    "express": "4.14.0",
+    "rollup": "0.36.3",
+    "rollup-plugin-buble": "0.14.0",
+    "rollup-plugin-commonjs": "5.0.5",
+    "rollup-plugin-node-resolve": "2.0.0",
+    "rollup-plugin-uglify": "1.0.1"
+  }
+}
