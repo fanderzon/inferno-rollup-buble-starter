@@ -1,5 +1,5 @@
-import createElement from 'inferno-create-element';
+import React from 'react';
 
 export default ({ who }) => (
-  <div>Hello, {who}</div>
+  <div>Hello, {who}!</div>
 );
