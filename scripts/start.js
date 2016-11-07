@@ -10,7 +10,7 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use('/dist', express.static(DIST));
 app.use((req, res) => {
-  res.sendfile(path.join( HOME, 'index.html' ));
+  res.sendFile(path.join( HOME, 'index.html' ));
 });
 
 
